@@ -14,26 +14,26 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const components: { title: string; href: string; description: string }[] = [
+const tools: { title: string; href: string; description: string }[] = [
   {
     title: "Aspect Ratio Adjuster",
     href: "/tools/aspect-ratio-adjuster",
-    description: "Changes the aspect ratio of an image, with AI intelligently filling in the missing parts to fit the new ratio seamlessly.",
+    description: "Resizes images, smartly fills missing areas",
   },
   {
     title: "Image Caption Generator",
     href: "/tools/image-caption-generator",
-    description: "Generates descriptive captions for images, leveraging AI to understand and articulate the content of your photos.",
+    description: "Automatically creates descriptive text captions",
   },
   {
     title: "Object Remover",
     href: "/tools/object-remover",
-    description: "Allows users to specify an object in an image for removal, with AI erasing the object while keeping the background intact.",
+    description: "Quickly erases unwanted objects seamlessly",
   },
   {
     title: "Colour Changer",
     href: "/tools/colour-changer",
-    description: "Enables users to change the colour of specific objects in images, with AI ensuring the change looks natural and integrated.",
+    description: "Easily alters and updates object colors",
   },
 ]
 
@@ -46,7 +46,7 @@ export default function MainNav() {
           <NavigationMenuTrigger>Tools</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {tools.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
